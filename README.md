@@ -1,6 +1,9 @@
 
 # Instagram Engagement Classification
 
+## Find the full project written **HERE**
+https://ashleyroque3183.wixsite.com/my-site-4/post/project-2
+
 ## 📜 Project Overview  
 This project aims to predict whether an Instagram post will have **high** or **low engagement** based on specific post characteristics. Engagement is measured by likes and comments, and the model enables predictions prior to posting. This project is essential for **brands**, **content creators**, and **marketers** looking to optimize their strategies and foster better audience interactions.
 
