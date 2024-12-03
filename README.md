@@ -1,11 +1,16 @@
 
 # Instagram Engagement Classification
 
-## Find the full project written **HERE**
-https://ashleyroque3183.wixsite.com/my-site-4/post/project-2
+
+## 📄 Full Project Write-Up  
+You can find the full details of this project, including insights, and results, **[HERE](https://ashleyroque3183.wixsite.com/my-site-4/post/project-2)**.  
+
+--- 
 
 ## 📜 Project Overview  
 This project aims to predict whether an Instagram post will have **high** or **low engagement** based on specific post characteristics. Engagement is measured by likes and comments, and the model enables predictions prior to posting. This project is essential for **brands**, **content creators**, and **marketers** looking to optimize their strategies and foster better audience interactions.
+
+---
 
 ## 🎯 Goals  
 1. **Predict engagement levels** (high/low) before a post is published.  
@@ -31,10 +36,9 @@ The dataset used is sourced from [Kaggle: Instagram Data](https://www.kaggle.com
 ## 🧹 Data Preprocessing  
 - **Handling Missing Values**: Filled missing captions and locations with placeholders like `no caption` and `no location`.  
 - **Feature Engineering**:  
-  - Created `engagement_rate` using the formula:  
-    \[
-    \text{engagement\_rate} = \frac{\text{likes} + \text{comments}}{\text{followers}}
-    \]
+  - Created `engagement_rate` using the formula:
+    engagement rate = likes + comments / followers 
+
   - Classified posts as `high` or `low` engagement based on the median engagement rate.  
 - **Boolean Conversion**: Converted `is_video` and `multiple_images` into numerical values (`1` for True, `0` for False).  
 
