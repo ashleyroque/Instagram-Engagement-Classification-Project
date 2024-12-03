@@ -45,10 +45,10 @@ Examined relationships between features such as followers, likes, and comments.
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(10, 8))
-correlation_matrix = df.corr()
-sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt='.2f')
-plt.title('Feature Correlation Heatmap')
+correlation_matrix = df[['followers', 'likes', 'comments']].corr()
+plt.figure(figsize=(8, 6))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt='.2f', cbar=True)
+plt.title('Correlation Heatmap of Instagram Features', fontsize=16)
 plt.show()
 ```
 
@@ -56,12 +56,12 @@ plt.show()
 Compared average engagement rates for posts with single vs. multiple images.  
 
 ```python
-post_type_engagement = df.groupby('multiple_images')['engagement_rate'].mean()
-fig, ax = plt.subplots(figsize=(8, 6))
+post_type_engagement = df.groupby('is_video')['engagement_rate'].mean()
+fig, ax = plt.subplots(figsize=(10, 8))
 post_type_engagement.plot(kind='bar', color='skyblue', ax=ax)
-ax.set_title("Engagement Rate by Post Type")
-ax.set_xlabel("Post Type (0: Single Image, 1: Multiple Images)")
-ax.set_ylabel("Average Engagement Rate")
+ax.set(title="Post Type Engagement", 
+       xlabel="Post Type (0 = Image, 1 = Video)", 
+       ylabel="Average Engagement Rate")
 plt.show()
 ```
 
@@ -73,23 +73,30 @@ plt.show()
 - Evaluation included a confusion matrix and classification report.
 
 ```python
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix
-
-model = LogisticRegression()
-model.fit(X_train, y_train)
+model = LogisticRegression() 
+model.fit(X_train, y_train) 
 y_pred = model.predict(X_test)
 
-print("Classification Report:\n", classification_report(y_test, y_pred))
+accuracy = accuracy_score(y_test, y_pred) 
+print("Accuracy:", accuracy)
+
+# Detailed performance report
+print(classification_report(y_test, y_pred, target_names=['low', 'high']))
 ```
 
 ### Confusion Matrix  
 ```python
-sns.heatmap(confusion_matrix(y_test, y_pred), annot=True, cmap='Blues', fmt='d')
-plt.title("Confusion Matrix")
-plt.xlabel("Predicted")
-plt.ylabel("True")
+# Compute confusion matrix
+cm = confusion_matrix(y_test, y_pred)
+
+# Plot confusion matrix
+plt.figure(figsize=(8, 6))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Low', 'High'], yticklabels=['Low', 'High'])
+plt.title('Confusion Matrix')
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
 plt.show()
+
 ```
 
 ---
