@@ -5,12 +5,12 @@
 ## 📄 Full Project Write-Up  
 You can find the full details of this project, including insights, and results, **[HERE](https://ashleyroque3183.wixsite.com/my-site-4/post/project-2)**.  
 
---- 
+
 
 ## 📜 Project Overview  
 This project aims to predict whether an Instagram post will have **high** or **low engagement** based on specific post characteristics. Engagement is measured by likes and comments, and the model enables predictions prior to posting. This project is essential for **brands**, **content creators**, and **marketers** looking to optimize their strategies and foster better audience interactions.
 
----
+
 
 ## 🎯 Goals  
 1. **Predict engagement levels** (high/low) before a post is published.  
