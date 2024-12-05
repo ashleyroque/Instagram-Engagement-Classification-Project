@@ -3,7 +3,7 @@
 
 
 ## 📄 Full Project Write-Up  
-You can find the full details of this project, including insights, and results, **[HERE](https://ashleyroque3183.wixsite.com/my-site-4/post/project-2)**.  
+You can find the full details of this project, including insights, and results, **[HERE]([(https://ashleyroque3183.wixsite.com/ashleyroque))**.  
 
 
 
