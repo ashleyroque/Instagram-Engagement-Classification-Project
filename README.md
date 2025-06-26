@@ -53,6 +53,8 @@ To understand the data, I visualized key features such as engagement rates, the 
 ### Correlation Heatmap  
 Examined relationships between features such as followers, likes, and comments.  
 
+![Correlation Heatmap of Instagram Features](heatmap.png)
+
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
