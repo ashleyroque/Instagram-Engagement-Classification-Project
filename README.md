@@ -33,17 +33,23 @@ The dataset used is sourced from [Kaggle: Instagram Data](https://www.kaggle.com
 ---
 
 ## 🧹 Data Preprocessing  
-- **Handling Missing Values**: Filled missing captions and locations with placeholders like `no caption` and `no location`.  
-- **Feature Engineering**:  
-  - Created `engagement_rate` using the formula:
-    engagement rate = likes + comments / followers 
+Preprocessing is a crucial step in the OSEMN pipeline, as it involves the “cleaning” of data before any further processing. This step ensures that the errors are addressed and missing or inaccurate values are removed or corrected, providing a solid foundation for meaningful insights.  
 
-  - Classified posts as `high` or `low` engagement based on the median engagement rate.  
-- **Boolean Conversion**: Converted `is_video` and `multiple_images` into numerical values (`1` for True, `0` for False).  
+Here are the pre-processing steps I took to prepare the data for analysis:  
+
+- **Handling missing values** by using `isnull()` in order to identify the missing data.  
+- **Fill and drop missing values**: if there is no caption or location, I have filled out with placeholder values such as “no location” and “no caption.”  
+- **Classifying posts** into higher engagement and lower engagement based on their engagement rate.  
+- **Converting boolean features** like `is_video` and `multiple_images` into numerical values. I have decided that I wanted to make `1` as true and `0` for false.  
+- **Train test split** the data using `train_test_split()`  
+- **Removing irrelevant features** that aren't important to predicting engagement.  
+- **Handling Missing Values**: Filled missing captions and locations with placeholders like `no caption` and `no location`.  
 
 ---
 
 ## 📈 Visualizations  
+To understand the data, I visualized key features such as engagement rates, the distribution of likes/comments, and the correlation between variables.
+
 ### Correlation Heatmap  
 Examined relationships between features such as followers, likes, and comments.  
 
