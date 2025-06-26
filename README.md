@@ -1,35 +1,34 @@
 
 # Instagram Engagement Classification
 
-
-## 📄 Full Project Write-Up  
-You can find the full details of this project, including insights, and results, **[HERE]([(https://ashleyroque3183.wixsite.com/ashleyroque))**.  
-
-
-
 ## 📜 Project Overview  
-This project aims to predict whether an Instagram post will have **high** or **low engagement** based on specific post characteristics. Engagement is measured by likes and comments, and the model enables predictions prior to posting. This project is essential for **brands**, **content creators**, and **marketers** looking to optimize their strategies and foster better audience interactions.
+This project focuses on predicting Instagram post engagement levels (high or low) using classification techniques. By analyzing key features such as followers, likes, comments, and post types (e.g., video, single or multiple images), the goal is to uncover patterns that influence engagement. The insights gained can help content creators and brands optimize their posting strategies to foster stronger audience interactions.
 
 
 
-## 🎯 Goals  
-1. **Predict engagement levels** (high/low) before a post is published.  
-2. **Identify key features** influencing Instagram engagement.
+
+## 🎯 Problem Statement 
+With this project, I am looking to answer these questions through classification:
+
+1. Can we predict whether a post will have low or high engagement before it is posted? 
+2. What are the key features that influence engagement on Instagram posts? 
+
+The goal of this project is to predict using classification. Based on specific characteristics, I aim to predict whether Instagram posts will receive high or low engagement. Engagement is measured through likes and comments, and I aim to predict this before the post is published to Instagram. 
+
+From an entrepreneurial perspective, understanding engagement is crucial for brands, content creators, and marketers, as it reflects audience interest and involvement. By predicting the level of engagement, this project seeks to optimize posting strategies, leading to improved interaction and engagement, leading to more meaningful connections with followers. 
 
 ---
 
 ## 📊 Dataset  
 The dataset used is sourced from [Kaggle: Instagram Data](https://www.kaggle.com/datasets/propriyam/instagram-data).  
 **Key Features**:  
-- `is_video`: Indicates if the post is a video.  
-- `caption`: The text included in the post.  
-- `comments`: Number of comments on the post.  
-- `likes`: Number of likes the post received.  
-- `followers`: Number of followers the user has.  
-- `multiple_images`: Indicates if the post contains multiple images.  
-
-**Target Variable**:  
-- `engagement_level`: High or low engagement based on engagement rate.
+- 'is_video': boolean ( 1=video, 0=image)
+- 'caption': string (text that is included within the post)
+- 'comments': integer (number of comments on the post)
+- 'likes': integer (number of likes on the post)
+- 'created_at': integer (timestamp indicating the creation time of the post)
+- 'multiple_images': boolean
+- 'followers': integer 
 
 ---
 
