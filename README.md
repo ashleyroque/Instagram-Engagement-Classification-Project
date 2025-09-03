@@ -19,7 +19,7 @@ From an entrepreneurial perspective, understanding engagement is crucial for bra
 
 ---
 
-## 📊 Dataset  
+## 📊 Introducing the Data   
 The dataset used is sourced from [Kaggle: Instagram Data](https://www.kaggle.com/datasets/propriyam/instagram-data).  
 **Key Features**:  
 - 'is_video': boolean ( 1=video, 0=image)
