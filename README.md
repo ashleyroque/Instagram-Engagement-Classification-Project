@@ -1,5 +1,5 @@
 
-# Instagram Engagement Classification
+# Instagram Engagement Classification Project
 
 ## 📜 Project Overview  
 This project focuses on predicting Instagram post engagement levels (high or low) using classification techniques. By analyzing key features such as followers, likes, comments, and post types (e.g., video, single or multiple images), the goal is to uncover patterns that influence engagement. The insights gained can help content creators and brands optimize their posting strategies to foster stronger audience interactions.
