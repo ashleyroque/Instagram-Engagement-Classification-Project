@@ -80,38 +80,9 @@ The logistic regression model showed an accuracy of 98.9%. Evaluation metrics in
 - Classification Report
   
 <img width="548" height="210" alt="accuracy" src="https://github.com/user-attachments/assets/6b3e2f36-4cc3-476b-9dfa-9e0d01a1781e" />
-```python
-model = LogisticRegression() 
-model.fit(X_train, y_train) 
-y_pred = model.predict(X_test)
-
-accuracy = accuracy_score(y_test, y_pred) 
-print("Accuracy:", accuracy)
-
-# Detailed performance report
-print(classification_report(y_test, y_pred, target_names=['low', 'high']))
-```
-
-
-
-
 
 A confusion matrix revealed that the model effectively classified both high and low level engagement levels with minimal misclassification. 
 <img width="568" height="491" alt="confusion matrix" src="https://github.com/user-attachments/assets/d4f1ab90-7936-4a12-9321-21e991858561" />
-
-```python
-# Compute confusion matrix
-cm = confusion_matrix(y_test, y_pred)
-
-# Plot confusion matrix
-plt.figure(figsize=(8, 6))
-sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Low', 'High'], yticklabels=['Low', 'High'])
-plt.title('Confusion Matrix')
-plt.xlabel('Predicted Label')
-plt.ylabel('True Label')
-plt.show()
-
-```
 
 ---
 
@@ -122,8 +93,6 @@ Logistic regression performed exceptionally well, with a high accuracy score and
 2. Engagement doesn't solely depend on follower count—**timing, content type**, and **post format** are significant.  
 
 ---
-
-
 
 ##📜 Final Conclusion: Storytelling 
 Throughout this project, I learned that features of Instagram posts influence engagement levels and that data can uncover hidden patterns. With the use of logistic regression, I discovered that factors such as post type (video vs. image), follower count, and the presence of multiple images play roles in determining engagement. 
