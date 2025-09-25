@@ -69,6 +69,8 @@ plt.show()
 ### Bar Chart  
 Compared average engagement rates for posts with single vs. multiple images.  
 
+![Single vs. Multiple Images](bar chart.png)
+
 ```python
 post_type_engagement = df.groupby('is_video')['engagement_rate'].mean()
 fig, ax = plt.subplots(figsize=(10, 8))
