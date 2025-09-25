@@ -87,7 +87,6 @@ plt.show()
 I used logistic regression into model the data in this project. This analysis technique is particularly effective for binary classification tasks, as it establishes a relationship between two factors—predictor variables and a binary outcome. Logistic regression uses this relationship to predict the likelihood of one of the binary outcomes based on the input features. Additionally, it offers simplicity and interpretability, making it an excellent choice for understanding how various predictors influence the target variable. It can handle binary regression problems effectively and it can handle binary classification. 
 
 Pros and Cons of Logistic Regression 
-
 Pros: 
 - Easily interpreted
 - Works well with binary classification 
