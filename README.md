@@ -55,32 +55,10 @@ Examined relationships between features such as followers, likes, and comments.
 
 ![Correlation Heatmap of Instagram Features](heatmap.png)
 
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-correlation_matrix = df[['followers', 'likes', 'comments']].corr()
-plt.figure(figsize=(8, 6))
-sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt='.2f', cbar=True)
-plt.title('Correlation Heatmap of Instagram Features', fontsize=16)
-plt.show()
-```
 
 ### Bar Chart  
 Compared average engagement rates for posts with single vs. multiple images.  
-
-bar chart.png
 <img width="607" height="501" alt="bar chart" src="https://github.com/user-attachments/assets/63dbe8e1-4939-434b-a48d-4764af20ea11" />
-
-```python
-post_type_engagement = df.groupby('is_video')['engagement_rate'].mean()
-fig, ax = plt.subplots(figsize=(10, 8))
-post_type_engagement.plot(kind='bar', color='skyblue', ax=ax)
-ax.set(title="Post Type Engagement", 
-       xlabel="Post Type (0 = Image, 1 = Video)", 
-       ylabel="Average Engagement Rate")
-plt.show()
-```
 
 ---
 
