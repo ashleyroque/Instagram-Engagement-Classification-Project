@@ -84,9 +84,34 @@ plt.show()
 ---
 
 ## 🤖 Modeling  
-- Used **Logistic Regression** for binary classification of engagement levels.  
-- Achieved an **accuracy score of 98.93%** on the test set.  
-- Evaluation included a confusion matrix and classification report.
+I used logistic regression into model the data in this project. This analysis technique is particularly effective for binary classification tasks, as it establishes a relationship between two factors—predictor variables and a binary outcome. Logistic regression uses this relationship to predict the likelihood of one of the binary outcomes based on the input features. Additionally, it offers simplicity and interpretability, making it an excellent choice for understanding how various predictors influence the target variable. It can handle binary regression problems effectively and it can handle binary classification. 
+
+Pros and Cons of Logistic Regression 
+
+Pros: 
+- Easily interpreted
+- Works well with binary classification 
+
+Cons:
+- Makes a linear relationship between the features and target. 
+- Could underperform when it comes to complex relationships. 
+
+## Model Performance
+The logistic regression model showed an accuracy of 98.9%. Evaluation metrics included: 
+- Accuracy Score 
+- Classification Report
+  
+** insert image here* 
+
+
+
+A confusion matrix revealed that the model effectively classified both high and low level engagement levels with minimal misclassification. 
+
+** insert image here** 
+
+
+
+
 
 ```python
 model = LogisticRegression() 
@@ -137,19 +162,15 @@ A key finding was that follower count alone does not guarantee high engagement. 
 Through the completion of my project, I was able to answer the initial questions posed:
 
 
-- Can we predict engagement levels? Yes, with an accuracy of 98.9%, the logistic regression model effectively predicted whether posts would receive high or low engagement.
+- **Can we predict engagement levels?** Yes, with an accuracy of 98.9%, the logistic regression model effectively predicted whether posts would receive high or low engagement.
 
-- What features drive engagement? Post type, follower count, and multi-image content emerged as key predictors, providing important insights for creators and marketers.
+- **What features drive engagement?** Post type, follower count, and multi-image content emerged as key predictors, providing important insights for creators and marketers.
 
 
 Through this project, I now have a better understanding of the complex interactions between post characteristics interact to influence engagement, providing both predictive and interpretative value for practical applications.
 
 
 ## 🌟 Impact  
-- **For Content Creators**: Offers insights to tailor posts for better engagement.  
-- **For Brands**: Enhances posting strategies to reach a larger audience effectively.  
-- **Ethical Considerations**: While useful, such models could incentivize creators to prioritize engagement metrics over authentic content.
-
 This project has various social and ethical implications. On the bright side, the insights gained can help content creators and brands design content that resonates more with their audiences, building stronger connections. For small businesses or individual creators, improving engagement could lead to greater visibility, audience growth, and financial stability.
 
 
@@ -163,6 +184,12 @@ This project emphasizes the dual role of data-driven decisions in social media. 
 
 
 Overall this project emphasizes the dual role of data-driven decisions in social media: a tool for empowerment but also one that demands thoughtful ethical consideration. Looking ahead, there should be more enforcement on safeguards that maintain authenticity and minimize harm in data-driven social media.
+
+**Overview** 
+
+- **For Content Creators**: Offers insights to tailor posts for better engagement.  
+- **For Brands**: Enhances posting strategies to reach a larger audience effectively.  
+- **Ethical Considerations**: While useful, such models could incentivize creators to prioritize engagement metrics over authentic content.
 
 
 ---
