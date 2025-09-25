@@ -125,7 +125,7 @@ Logistic regression performed exceptionally well, with a high accuracy score and
 
 
 
-## Final Conclusion: Storytelling 
+##📜 Final Conclusion: Storytelling 
 Throughout this project, I learned that features of Instagram posts influence engagement levels and that data can uncover hidden patterns. With the use of logistic regression, I discovered that factors such as post type (video vs. image), follower count, and the presence of multiple images play roles in determining engagement. 
 
 
