@@ -94,20 +94,14 @@ Logistic regression performed exceptionally well, with a high accuracy score and
 
 ---
 
-##📜 Final Conclusion: Storytelling 
+## 📜 Final Conclusion: Storytelling 
 Throughout this project, I learned that features of Instagram posts influence engagement levels and that data can uncover hidden patterns. With the use of logistic regression, I discovered that factors such as post type (video vs. image), follower count, and the presence of multiple images play roles in determining engagement. 
-
 
 A key finding was that follower count alone does not guarantee high engagement. Posts that had a smaller audience but more targeted or aesthetically pleasing content often performed better than those with a broader, less engaged audience. This insight highlighted the importance of quality over quantity for social media marketing strategy. For example, the data showed that videos tend to receive higher engagement that images, suggesting that dynamic content might capture audience engagement more effectively. Similarly, posts that contained multiple images resulted in higher engagement, revealing that diverse content within a single post can be a powerful way to keep followers interested.
 
-
 Through the completion of my project, I was able to answer the initial questions posed:
-
-
 - **Can we predict engagement levels?** Yes, with an accuracy of 98.9%, the logistic regression model effectively predicted whether posts would receive high or low engagement.
-
 - **What features drive engagement?** Post type, follower count, and multi-image content emerged as key predictors, providing important insights for creators and marketers.
-
 
 Through this project, I now have a better understanding of the complex interactions between post characteristics interact to influence engagement, providing both predictive and interpretative value for practical applications.
 
