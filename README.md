@@ -69,7 +69,8 @@ plt.show()
 ### Bar Chart  
 Compared average engagement rates for posts with single vs. multiple images.  
 
-![Single vs. Multiple Images](bar chart.png)
+bar chart.png
+<img width="607" height="501" alt="bar chart" src="https://github.com/user-attachments/assets/63dbe8e1-4939-434b-a48d-4764af20ea11" />
 
 ```python
 post_type_engagement = df.groupby('is_video')['engagement_rate'].mean()
@@ -100,18 +101,7 @@ The logistic regression model showed an accuracy of 98.9%. Evaluation metrics in
 - Accuracy Score 
 - Classification Report
   
-** insert image here* 
-
-
-
-A confusion matrix revealed that the model effectively classified both high and low level engagement levels with minimal misclassification. 
-
-** insert image here** 
-
-
-
-
-
+<img width="548" height="210" alt="accuracy" src="https://github.com/user-attachments/assets/6b3e2f36-4cc3-476b-9dfa-9e0d01a1781e" />
 ```python
 model = LogisticRegression() 
 model.fit(X_train, y_train) 
@@ -124,7 +114,13 @@ print("Accuracy:", accuracy)
 print(classification_report(y_test, y_pred, target_names=['low', 'high']))
 ```
 
-### Confusion Matrix  
+
+
+
+
+A confusion matrix revealed that the model effectively classified both high and low level engagement levels with minimal misclassification. 
+<img width="568" height="491" alt="confusion matrix" src="https://github.com/user-attachments/assets/d4f1ab90-7936-4a12-9321-21e991858561" />
+
 ```python
 # Compute confusion matrix
 cm = confusion_matrix(y_test, y_pred)
