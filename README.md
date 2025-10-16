@@ -1,5 +1,11 @@
+<img width="1000" height="259" alt="instagram-logo-name" src="https://github.com/user-attachments/assets/8201f67a-a806-4fd1-958b-9279ee6e0c31" />
+
+
 
 # Instagram Engagement Classification Project
+
+
+
 
 ## 📜 Project Overview  
 This project focuses on predicting Instagram post engagement levels (high or low) using classification techniques. By analyzing key features such as followers, likes, comments, and post types (e.g., video, single or multiple images), the goal is to uncover patterns that influence engagement. The insights gained can help content creators and brands optimize their posting strategies to foster stronger audience interactions.
